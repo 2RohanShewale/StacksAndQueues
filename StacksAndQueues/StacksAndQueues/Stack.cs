@@ -39,5 +39,14 @@ namespace StacksAndQueues
             }
             Display();
         }
+        public void Peak()
+        {
+            if (top != null)
+            {
+                Console.WriteLine($"\nTop element->{top.data}");
+            }
+            else
+                Console.WriteLine("Stack is empty");
+        }
     }
 }
