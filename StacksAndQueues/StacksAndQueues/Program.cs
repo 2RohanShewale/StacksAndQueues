@@ -16,7 +16,7 @@ namespace StacksAndQueues
             Queue queue = new Queue();
             while (true)
             {
-                Console.WriteLine("\nOptions: \n1.Stack Push\n2.Stack Pop\n3.Stack Peak\n4.Display stack\n5.Enqueue\n7.Display Queue");
+                Console.WriteLine("\nOptions: \n1.Stack Push\n2.Stack Pop\n3.Stack Peak\n4.Display stack\n5.Enqueue\n6.Dequeue\n7.Display Queue");
                 Console.Write("Enter a choice: ");
                 int choice = Convert.ToInt32(Console.ReadLine());
                 switch (choice)
@@ -26,7 +26,6 @@ namespace StacksAndQueues
                         stack.Push(20);
                         stack.Push(30);
                         break;
-
                     case 2:
                         stack.Pop();
                         break;
@@ -41,7 +40,10 @@ namespace StacksAndQueues
                         queue.Enqueue(20);
                         queue.Enqueue(30);
                         break;
-                    case 8:
+                    case 6:
+                        queue.Dequeue();
+                        break;
+                    case 7:
                         queue.Display();
                         break;
                     default:
