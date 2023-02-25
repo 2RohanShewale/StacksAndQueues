@@ -1,17 +1,11 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Runtime.Remoting.Messaging;
-using System.Text;
-using System.Threading.Tasks;
-using System.Xml.Serialization;
 
 namespace StacksAndQueues
 {
-    internal class Stack
+    public class Stack
     {
         public Node top;
-        public Stack() 
+        public Stack()
         {
             top = null;
         }
@@ -35,6 +29,15 @@ namespace StacksAndQueues
                 Console.WriteLine("---");
                 temp = temp.next;
             }
+        }
+        public void Pop()
+        {
+            if (top != null)
+            {
+                Console.WriteLine($"{top.data}");
+                top= top.next;
+            }
+            Display();
         }
     }
 }

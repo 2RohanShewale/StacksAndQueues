@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace StacksAndQueues
 {
-    internal class Node
+    public class Node
     {
         public int data;
         public Node next;
